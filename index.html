@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoonHongICHING</title>
+<meta name="description" content="동전 세 닢, 산대, 지금 시각, 괘 카드로 뽑는 주역 64괘. 본괘와 변괘, 동효, 팔괘와 64괘 도감까지.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2312151f'/%3E%3Cg fill='%23e3b65a'%3E%3Crect x='14' y='12' width='36' height='6' rx='1'/%3E%3Crect x='14' y='24' width='15' height='6' rx='1'/%3E%3Crect x='35' y='24' width='15' height='6' rx='1'/%3E%3Crect x='14' y='36' width='36' height='6' rx='1'/%3E%3Crect x='14' y='48' width='15' height='6' rx='1'/%3E%3Crect x='35' y='48' width='15' height='6' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@600;900&display=swap">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="#cast" aria-label="MoonHongICHING 처음으로">Moon<b>Hong</b>ICHING</a>
+  <nav aria-label="주요 메뉴">
+    <a href="#cast">괘 뽑기</a>
+    <a href="#library">64괘</a>
+    <a href="#trigrams">팔괘</a>
+    <a href="#guide">읽는 법</a>
+    <a href="#about">주역 이야기</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ── 괘 뽑기 ───────────────────────── -->
+  <section class="intro" id="cast">
+    <p class="eyebrow">I Ching · 예순네 개의 괘</p>
+    <h1>여섯 줄의 선으로,<br>지금의 때를 묻습니다</h1>
+    <p class="lead">주역은 양(—)과 음(- -) 여섯 줄로 세상의 모든 때를 예순네 가지 모습으로 나눕니다. 질문을 하나 마음에 담고, 괘를 지어 보세요. 움직이는 효가 있으면 지금의 괘(본괘)가 어디로 흘러가는지(변괘)까지 보여 드립니다.</p>
+
+    <form class="setup" id="setup">
+      <fieldset class="methods">
+        <legend>괘를 짓는 방법</legend>
+        <div class="method-options" id="methodOptions">
+          <label class="method-option">
+            <input type="radio" name="method" value="coin" checked>
+            <span class="method-card">
+              <svg viewBox="0 0 64 40" aria-hidden="true" class="m-glyph"><circle cx="14" cy="20" r="11"/><rect x="10" y="16" width="8" height="8"/><circle cx="32" cy="20" r="11"/><rect x="28" y="16" width="8" height="8"/><circle cx="50" cy="20" r="11"/><rect x="46" y="16" width="8" height="8"/></svg>
+              <strong>척전법 · 동전 세 닢</strong>
+              <em>여섯 번 던지기</em>
+              <p>동전 셋을 여섯 번 던져 아래에서 위로 효를 쌓습니다. 움직이는 효가 여럿 나올 수 있는 정통 방식.</p>
+            </span>
+          </label>
+          <label class="method-option">
+            <input type="radio" name="method" value="stick">
+            <span class="method-card">
+              <svg viewBox="0 0 64 40" aria-hidden="true" class="m-glyph"><path d="M18 38V6M24 38V3M30 38V8M36 38V4M42 38V7M48 38V5"/><path d="M12 38h42"/></svg>
+              <strong>산대법 · 막대 셋</strong>
+              <em>세 번 뽑기</em>
+              <p>여덟 개의 산대에서 하괘, 상괘, 움직이는 효를 차례로 뽑습니다. 동효는 하나.</p>
+            </span>
+          </label>
+          <label class="method-option">
+            <input type="radio" name="method" value="time">
+            <span class="method-card">
+              <svg viewBox="0 0 64 40" aria-hidden="true" class="m-glyph"><circle cx="32" cy="20" r="16"/><path d="M32 10v10l7 5"/></svg>
+              <strong>시간 작괘 · 지금 이 순간</strong>
+              <em>한 번에</em>
+              <p>묻는 순간의 시(時)로 하괘, 분(分)으로 상괘, 둘의 합으로 동효를 정합니다.</p>
+            </span>
+          </label>
+          <label class="method-option">
+            <input type="radio" name="method" value="card">
+            <span class="method-card">
+              <svg viewBox="0 0 64 40" aria-hidden="true" class="m-glyph"><rect x="8" y="6" width="16" height="28" rx="2"/><rect x="24" y="4" width="16" height="28" rx="2"/><rect x="40" y="6" width="16" height="28" rx="2"/></svg>
+              <strong>괘 카드 · 펼쳐 뽑기</strong>
+              <em>1 · 3 · 5 · 6 · 14장</em>
+              <p>64괘를 카드처럼 섞어 펼치고 손으로 고릅니다. 흐름, 십자, 두 사람, 1년 운세 배열.</p>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="spreads" id="spreadField" hidden>
+        <legend>카드 배열</legend>
+        <div class="spread-options" id="spreadOptions"></div>
+      </fieldset>
+
+      <div class="question">
+        <label for="question">마음속 질문 <span>(선택)</span></label>
+        <input id="question" name="question" type="text" maxlength="80" autocomplete="off" placeholder="예) 지금 하는 일을 계속해도 될까요?">
+      </div>
+
+      <button class="primary" type="submit">괘 짓기 시작</button>
+    </form>
+  </section>
+
+  <!-- ── 뽑는 자리 ─────────────────────── -->
+  <section class="stage" id="stage" hidden>
+    <div class="stage-head">
+      <h2 id="stageTitle"></h2>
+      <p class="asked" id="asked" hidden></p>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </div>
+
+    <!-- 동전 -->
+    <div class="pane pane-coin" id="paneCoin" hidden>
+      <div class="coin-table">
+        <div class="coins" id="coins"></div>
+        <div class="coin-actions">
+          <button class="primary" type="button" id="tossBtn">동전 던지기</button>
+          <button class="ghost" type="button" id="tossAllBtn">남은 효 한꺼번에</button>
+        </div>
+        <p class="coin-key">양면(陽) 하나 → 양효 ⚊ · 양면 둘 → 음효 ⚋ · 양면 셋 → <b>움직이는 양</b> · 음면 셋 → <b>움직이는 음</b></p>
+      </div>
+      <ol class="build" id="build" reversed></ol>
+    </div>
+
+    <!-- 산대 -->
+    <div class="pane pane-stick" id="paneStick" hidden>
+      <div class="tube-wrap">
+        <div class="tube" id="tube" aria-hidden="true"></div>
+        <button class="primary" type="button" id="stickBtn">산대 뽑기</button>
+      </div>
+      <ol class="stick-steps" id="stickSteps"></ol>
+    </div>
+
+    <!-- 시간 -->
+    <div class="pane pane-time" id="paneTime" hidden>
+      <div class="clock">
+        <p class="clock-now" id="clockNow">--:--</p>
+        <p class="clock-date" id="clockDate"></p>
+        <button class="primary" type="button" id="timeBtn">이 순간으로 괘 짓기</button>
+      </div>
+      <ol class="time-steps" id="timeSteps"></ol>
+    </div>
+
+    <!-- 카드 -->
+    <div class="pane pane-card" id="paneCard" hidden>
+      <div class="deck" id="deck"></div>
+    </div>
+
+    <div class="stage-foot">
+      <button class="ghost" type="button" id="restartBtn">처음부터 다시</button>
+    </div>
+  </section>
+
+  <!-- ── 결과 ──────────────────────────── -->
+  <section class="result" id="result" hidden>
+    <div class="result-head">
+      <p class="eyebrow">Reading</p>
+      <h2 id="resultTitle">괘가 나왔습니다</h2>
+      <p class="asked" id="resultAsked" hidden></p>
+    </div>
+    <div id="resultBody"></div>
+    <div class="result-foot">
+      <button class="primary" type="button" id="againBtn">다시 괘 짓기</button>
+      <a class="ghost" href="#library">64괘 둘러보기</a>
+    </div>
+  </section>
+
+  <!-- ── 64괘 도감 ─────────────────────── -->
+  <section id="library">
+    <p class="eyebrow">Sixty-Four Hexagrams</p>
+    <h2>64괘 도감</h2>
+    <p class="section-lead">상경 30괘는 하늘과 땅(건·곤)에서 시작해 물과 불(감·리)로 끝나고, 하경 34괘는 사람의 감응(함)에서 시작해 아직 건너지 못한 강(미제)으로 끝납니다. 괘를 누르면 풀이가 열립니다.</p>
+    <div class="lib-tools">
+      <div class="chips" role="group" aria-label="괘 거르기" id="libFilter">
+        <button type="button" data-f="all" aria-pressed="true">전체</button>
+        <button type="button" data-f="upper" aria-pressed="false">상경 1–30</button>
+        <button type="button" data-f="lower" aria-pressed="false">하경 31–64</button>
+        <button type="button" data-f="pos" aria-pressed="false">순한 흐름</button>
+        <button type="button" data-f="neg" aria-pressed="false">어려운 흐름</button>
+      </div>
+      <input class="lib-search" id="libSearch" type="search" placeholder="이름·뜻·열쇠말로 찾기 (예: 기다림)" aria-label="괘 찾기">
+    </div>
+    <ul class="lib-grid" id="libGrid"></ul>
+    <p class="lib-empty" id="libEmpty" hidden>맞는 괘가 없습니다.</p>
+  </section>
+
+  <!-- ── 팔괘 ──────────────────────────── -->
+  <section id="trigrams">
+    <p class="eyebrow">Eight Trigrams</p>
+    <h2>팔괘 · 여덟 개의 바탕</h2>
+    <p class="section-lead">세 줄짜리 괘 여덟 개가 위아래로 겹쳐 64괘가 됩니다. 아래에 놓인 괘(하괘)는 안쪽과 나, 위에 놓인 괘(상괘)는 바깥과 상대를 나타냅니다. 숫자는 선천팔괘의 순서로, 산대와 시간 작괘에서 괘를 찾을 때 씁니다.</p>
+    <ul class="tri-grid" id="triGrid"></ul>
+
+    <h3 class="sub">64괘 표</h3>
+    <p class="section-lead">왼쪽이 하괘, 위쪽이 상괘입니다. 둘이 만나는 칸이 그 괘입니다.</p>
+    <div class="table-scroll">
+      <table class="hex-table" id="hexTable"></table>
+    </div>
+  </section>
+
+  <!-- ── 읽는 법 ───────────────────────── -->
+  <section id="guide">
+    <p class="eyebrow">How to Read</p>
+    <h2>괘를 읽는 법</h2>
+    <div class="guide-grid">
+      <article>
+        <h3><span>1</span>질문은 하나로</h3>
+        <p>"잘될까요?"보다 "이 일을 석 달 안에 시작해도 될까요?"처럼 대상과 기간이 분명할수록 괘가 또렷하게 읽힙니다. 같은 질문을 답이 마음에 들 때까지 거듭 묻지 않는 것이 주역의 오랜 예의입니다.</p>
+      </article>
+      <article>
+        <h3><span>2</span>효는 아래에서 위로</h3>
+        <p>괘는 땅에서 자라는 나무처럼 맨 아래 초효부터 쌓습니다. 아래 세 줄이 하괘(안·나·시작), 위 세 줄이 상괘(밖·상대·결과)입니다.</p>
+      </article>
+      <article>
+        <h3><span>3</span>이름은 위 · 아래 · 뜻</h3>
+        <p>'수뢰둔'은 위가 물(수), 아래가 우레(뢰), 괘 이름이 둔(屯)이라는 뜻입니다. 위아래가 같은 괘는 '거듭 중(重)'을 붙여 '중천건'처럼 부릅니다.</p>
+      </article>
+      <article>
+        <h3><span>4</span>본괘와 변괘</h3>
+        <p>움직이는 효(동효)는 음은 양으로, 양은 음으로 바뀝니다. 바뀌기 전이 본괘(지금), 바뀐 뒤가 변괘(흘러갈 곳)입니다. 동효가 없으면 본괘 하나만 읽습니다.</p>
+      </article>
+      <article>
+        <h3><span>5</span>동효의 수로 무게 정하기</h3>
+        <ul class="rule-list" id="ruleList"></ul>
+      </article>
+      <article>
+        <h3><span>6</span>여섯 자리의 성격</h3>
+        <ul class="rule-list" id="placeList"></ul>
+      </article>
+      <article>
+        <h3><span>7</span>4대 난괘</h3>
+        <p>수뢰둔(3), 중수감(29), 수산건(39), 택수곤(47)은 어려움을 대표하는 네 괘입니다. 이 괘가 나오면 질문 속에 이미 어려움이 있다는 신호로 보고, 어떻게 넘을지를 읽어 주세요.</p>
+      </article>
+      <article>
+        <h3><span>8</span>다른 각도로 보기</h3>
+        <p><b>호괘</b>는 2·3·4효를 아래에, 3·4·5효를 위에 놓아 지은 괘로, 겉에 드러나지 않은 속사정을 봅니다. <b>착괘</b>는 음양을 모두 뒤집은 괘로 정반대 입장을, <b>종괘</b>는 괘를 거꾸로 세운 괘로 상대 쪽에서 본 모습을 보여 줍니다. 풀이마다 세 괘가 함께 나옵니다.</p>
+      </article>
+      <article>
+        <h3><span>9</span>1년 운세 읽기</h3>
+        <p>괘 카드에서 '1년 운세'를 고르면 이번 달부터 열두 달에 한 장씩, 그리고 한 해의 조언과 결과를 한 장씩 모두 14장을 뽑습니다. 맨 위의 띠에서 순한 달과 어려운 달을 한눈에 보고, 달마다 풀이를 열어 보세요.</p>
+      </article>
+      <article>
+        <h3><span>10</span>정해진 답은 없다</h3>
+        <p>주역은 '바뀜(易)'의 책입니다. 같은 괘도 묻는 사람의 처지와 의도에 따라 다르게 읽히고, 때가 바뀌면 괘도 바뀝니다. 먼 미래일수록 다시 물어 점검하세요.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── 주역 이야기 ───────────────────── -->
+  <section id="about" class="about">
+    <p class="eyebrow">About the I Ching</p>
+    <h2>주역 이야기</h2>
+    <div class="about-cols">
+      <p>주역(周易)은 주나라의 역(易)이라는 뜻으로, 『역경』이라고도 부릅니다. 전하는 이야기에 따르면 복희가 하늘과 땅을 살펴 팔괘를 긋고, 문왕이 이를 겹쳐 64괘를 만들어 괘마다 말(괘사)을 붙였으며, 주공이 효마다 말(효사)을 달고, 공자가 풀이(십익)를 더했다고 합니다.</p>
+      <p>'역(易)'에는 세 가지 뜻이 있다고 합니다. 모든 것이 바뀐다는 변역(變易), 그 바뀜에 변하지 않는 이치가 있다는 불역(不易), 그 이치는 알고 보면 쉽다는 간이(簡易). 그래서 주역의 점은 운명을 못 박는 것이 아니라, 지금이 어떤 때인지 알고 그 때에 맞게 움직이도록 돕는 거울입니다.</p>
+    </div>
+  </section>
+</main>
+
+<dialog class="detail" id="detail" aria-labelledby="detailTitle">
+  <button class="close" type="button" id="detailClose" aria-label="닫기">×</button>
+  <div id="detailBody"></div>
+</dialog>
+
+<footer class="foot">
+  <p>Moon<b>Hong</b>ICHING · 괘는 답을 정해 주지 않고, 지금의 때를 비춰 줍니다.</p>
+</footer>
+
+<script src="hexagrams.js?v=3"></script>
+<script src="lines.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
