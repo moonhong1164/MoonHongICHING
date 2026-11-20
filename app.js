@@ -145,6 +145,8 @@
     state.spread = SPREADS.find((s) => s.id === ($('input[name="spread"]:checked') || {}).value) || SPREADS[1];
     if (state.spread.id === "year") state.spread = yearSpread(state.spread);
     state.lines = []; state.sticks = []; state.picks = [];
+    state.saved = null;
+    if (journal) journal.hide();
     $("#result").hidden = true;
     $("#stage").hidden = false;
     $$(".pane").forEach((p) => (p.hidden = true));
@@ -409,6 +411,9 @@
       </div>
       ${readingHTML(ben, { label: "본괘", open: true, moving: mvSet, focus: focus && focus.kind === "mv" ? focus.idx : -1 })}
       ${bian ? readingHTML(bian, { label: "변괘", open: moving.length >= 3, focus: focus && focus.kind === "still" ? focus.idx : -1 }) : ""}`;
+    const mvText = moving.length ? `동효 ${moving.map((i) => i + 1).join("·")}효` : "동효 없음";
+    state.saved = { spread: METHOD_TITLE[state.method].split(" · ")[0],
+      cards: [{ name: `${ben.n}. ${ben.name}`, position: `본괘 · ${mvText}` }].concat(bian ? [{ name: `${bian.n}. ${bian.name}`, position: "변괘" }] : []) };
     reveal();
   }
 
@@ -432,6 +437,7 @@
       <div class="sp-grid" style="grid-template-columns:repeat(${cols},minmax(0,${s.id === "year" ? 120 : 170}px))">${cells}</div>
       ${hexes.some((h) => HARD.includes(h.n)) ? `<p class="hard-note">4대 난괘가 섞여 나왔습니다. 그 자리에 이미 어려움이 놓여 있다는 신호로 읽어 보세요.</p>` : ""}
       ${readings}`;
+    state.saved = { spread: `괘 카드 · ${s.name}`, cards: hexes.map((h, i) => ({ name: `${h.n}. ${h.name}`, position: s.pos[i].t })) };
     reveal();
   }
 
@@ -439,6 +445,7 @@
     $("#stage").hidden = true;
     clearInterval(clockTimer);
     $("#result").hidden = false;
+    if (journal && state.saved) journal.show();
     const ra = $("#resultAsked");
     ra.hidden = !state.question;
     ra.textContent = state.question ? `“${state.question}”` : "";
@@ -603,6 +610,14 @@
     });
     $("#libSearch").addEventListener("input", renderLibrary);
   }
+
+  /* ── 리딩 일지에 저장 (허브의 journal-box.js를 못 불러오면 아무것도 하지 않는다) ── */
+  /* 괘는 카드 한 장처럼 '번호. 이름'으로 남기고, 동효는 본괘 자리 이름에 적는다. 방향은 없다(null) */
+  var journal = window.MoonHongJournal && window.MoonHongJournal.box ? window.MoonHongJournal.box({
+    deck: "주역", deckId: "iching", after: $("#resultBody"),
+    read: () => state.saved && { spread: state.saved.spread, question: state.question,
+      cards: state.saved.cards.map((c) => ({ name: c.name, position: c.position, orientation: null })) },
+  }) : null;
 
   init();
 })();
