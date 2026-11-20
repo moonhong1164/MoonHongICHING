@@ -1,0 +1,904 @@
+{
+  "deck": "주역",
+  "deckId": "iching",
+  "site": "https://moonhong1164.github.io/MoonHongICHING/",
+  "count": 64,
+  "cards": [
+    {
+      "id": "1",
+      "name": "중천건",
+      "image": null,
+      "keywords": [
+        "창조",
+        "추진력",
+        "리더십",
+        "꾸준함",
+        "자만 주의"
+      ],
+      "meaning": "하늘 · 굳셈",
+      "link": null
+    },
+    {
+      "id": "2",
+      "name": "중지곤",
+      "image": null,
+      "keywords": [
+        "포용",
+        "인내",
+        "돌봄",
+        "따름",
+        "결실"
+      ],
+      "meaning": "땅 · 받아들임",
+      "link": null
+    },
+    {
+      "id": "3",
+      "name": "수뢰둔",
+      "image": null,
+      "keywords": [
+        "시작의 진통",
+        "혼란",
+        "싹틈",
+        "도움 필요",
+        "4대 난괘"
+      ],
+      "meaning": "어려운 시작",
+      "link": null
+    },
+    {
+      "id": "4",
+      "name": "산수몽",
+      "image": null,
+      "keywords": [
+        "배움",
+        "순수함",
+        "미숙함",
+        "가르침",
+        "시행착오"
+      ],
+      "meaning": "어림 · 배움",
+      "link": null
+    },
+    {
+      "id": "5",
+      "name": "수천수",
+      "image": null,
+      "keywords": [
+        "기다림",
+        "때",
+        "인내",
+        "준비",
+        "휴식"
+      ],
+      "meaning": "기다림",
+      "link": null
+    },
+    {
+      "id": "6",
+      "name": "천수송",
+      "image": null,
+      "keywords": [
+        "갈등",
+        "소송",
+        "고집",
+        "경쟁",
+        "중재"
+      ],
+      "meaning": "다툼 · 시비",
+      "link": null
+    },
+    {
+      "id": "7",
+      "name": "지수사",
+      "image": null,
+      "keywords": [
+        "조직",
+        "규율",
+        "리더",
+        "단결",
+        "전략"
+      ],
+      "meaning": "무리 · 통솔",
+      "link": null
+    },
+    {
+      "id": "8",
+      "name": "수지비",
+      "image": null,
+      "keywords": [
+        "화합",
+        "협력",
+        "친밀",
+        "신뢰",
+        "합류"
+      ],
+      "meaning": "가까이함 · 친밀",
+      "link": null
+    },
+    {
+      "id": "9",
+      "name": "풍천소축",
+      "image": null,
+      "keywords": [
+        "작은 저축",
+        "제동",
+        "준비",
+        "부드러운 힘",
+        "답답함"
+      ],
+      "meaning": "작게 모음",
+      "link": null
+    },
+    {
+      "id": "10",
+      "name": "천택리",
+      "image": null,
+      "keywords": [
+        "조심스러운 걸음",
+        "예의",
+        "위험 속 전진",
+        "질서",
+        "윗사람"
+      ],
+      "meaning": "밟고 나아감 · 예절",
+      "link": null
+    },
+    {
+      "id": "11",
+      "name": "지천태",
+      "image": null,
+      "keywords": [
+        "소통",
+        "평화",
+        "번영",
+        "조화",
+        "좋은 흐름"
+      ],
+      "meaning": "통함 · 태평",
+      "link": null
+    },
+    {
+      "id": "12",
+      "name": "천지비",
+      "image": null,
+      "keywords": [
+        "불통",
+        "정체",
+        "단절",
+        "때를 기다림",
+        "소인의 득세"
+      ],
+      "meaning": "막힘",
+      "link": null
+    },
+    {
+      "id": "13",
+      "name": "천화동인",
+      "image": null,
+      "keywords": [
+        "동료",
+        "협력",
+        "공동 목표",
+        "열린 마음",
+        "모임"
+      ],
+      "meaning": "함께함 · 동지",
+      "link": null
+    },
+    {
+      "id": "14",
+      "name": "화천대유",
+      "image": null,
+      "keywords": [
+        "풍요",
+        "성취",
+        "인정",
+        "재물",
+        "나눔"
+      ],
+      "meaning": "크게 가짐",
+      "link": null
+    },
+    {
+      "id": "15",
+      "name": "지산겸",
+      "image": null,
+      "keywords": [
+        "겸손",
+        "양보",
+        "낮춤",
+        "균형",
+        "끝이 좋음"
+      ],
+      "meaning": "겸손",
+      "link": null
+    },
+    {
+      "id": "16",
+      "name": "뇌지예",
+      "image": null,
+      "keywords": [
+        "기쁨",
+        "열정",
+        "준비",
+        "음악",
+        "들뜸 주의"
+      ],
+      "meaning": "즐거움 · 미리 준비",
+      "link": null
+    },
+    {
+      "id": "17",
+      "name": "택뢰수",
+      "image": null,
+      "keywords": [
+        "따름",
+        "흐름 타기",
+        "유연함",
+        "변화 수용",
+        "쉼"
+      ],
+      "meaning": "따름",
+      "link": null
+    },
+    {
+      "id": "18",
+      "name": "산풍고",
+      "image": null,
+      "keywords": [
+        "부패",
+        "쇄신",
+        "물려받은 문제",
+        "개혁",
+        "재정비"
+      ],
+      "meaning": "묵은 병 고치기",
+      "link": null
+    },
+    {
+      "id": "19",
+      "name": "지택림",
+      "image": null,
+      "keywords": [
+        "다가오는 기회",
+        "성장",
+        "보살핌",
+        "가르침",
+        "봄기운"
+      ],
+      "meaning": "다가옴 · 임함",
+      "link": null
+    },
+    {
+      "id": "20",
+      "name": "풍지관",
+      "image": null,
+      "keywords": [
+        "관찰",
+        "성찰",
+        "본보기",
+        "지켜봄",
+        "정신적 가치"
+      ],
+      "meaning": "바라봄 · 살핌",
+      "link": null
+    },
+    {
+      "id": "21",
+      "name": "화뢰서합",
+      "image": null,
+      "keywords": [
+        "장애 제거",
+        "결단",
+        "법과 규칙",
+        "처벌",
+        "돌파"
+      ],
+      "meaning": "깨물어 합함",
+      "link": null
+    },
+    {
+      "id": "22",
+      "name": "산화비",
+      "image": null,
+      "keywords": [
+        "아름다움",
+        "꾸밈",
+        "예술",
+        "겉모습",
+        "실속 점검"
+      ],
+      "meaning": "꾸밈",
+      "link": null
+    },
+    {
+      "id": "23",
+      "name": "산지박",
+      "image": null,
+      "keywords": [
+        "쇠퇴",
+        "손실",
+        "드러남",
+        "배신",
+        "지키기"
+      ],
+      "meaning": "깎임 · 무너짐",
+      "link": null
+    },
+    {
+      "id": "24",
+      "name": "지뢰복",
+      "image": null,
+      "keywords": [
+        "회복",
+        "재회",
+        "다시 시작",
+        "새싹",
+        "반복"
+      ],
+      "meaning": "돌아옴 · 회복",
+      "link": null
+    },
+    {
+      "id": "25",
+      "name": "천뢰무망",
+      "image": null,
+      "keywords": [
+        "순수",
+        "진실",
+        "뜻밖의 일",
+        "자연스러움",
+        "욕심 경계"
+      ],
+      "meaning": "거짓 없음",
+      "link": null
+    },
+    {
+      "id": "26",
+      "name": "산천대축",
+      "image": null,
+      "keywords": [
+        "축적",
+        "실력",
+        "공부",
+        "절제",
+        "큰 그릇"
+      ],
+      "meaning": "크게 쌓음",
+      "link": null
+    },
+    {
+      "id": "27",
+      "name": "산뢰이",
+      "image": null,
+      "keywords": [
+        "양육",
+        "건강",
+        "말조심",
+        "먹을 것",
+        "자기 관리"
+      ],
+      "meaning": "기름 · 말과 먹을 것",
+      "link": null
+    },
+    {
+      "id": "28",
+      "name": "택풍대과",
+      "image": null,
+      "keywords": [
+        "과부하",
+        "무리",
+        "버팀",
+        "위기",
+        "결단"
+      ],
+      "meaning": "크게 지나침",
+      "link": null
+    },
+    {
+      "id": "29",
+      "name": "중수감",
+      "image": null,
+      "keywords": [
+        "위험",
+        "시련",
+        "불안",
+        "흐름",
+        "4대 난괘"
+      ],
+      "meaning": "거듭된 험난",
+      "link": null
+    },
+    {
+      "id": "30",
+      "name": "중화리",
+      "image": null,
+      "keywords": [
+        "밝음",
+        "열정",
+        "명예",
+        "드러남",
+        "의지할 곳"
+      ],
+      "meaning": "붙음 · 밝음",
+      "link": null
+    },
+    {
+      "id": "31",
+      "name": "택산함",
+      "image": null,
+      "keywords": [
+        "끌림",
+        "교감",
+        "설렘",
+        "직감",
+        "인연"
+      ],
+      "meaning": "느낌 · 감응",
+      "link": null
+    },
+    {
+      "id": "32",
+      "name": "뇌풍항",
+      "image": null,
+      "keywords": [
+        "지속",
+        "꾸준함",
+        "약속",
+        "일상",
+        "변하지 않는 원칙"
+      ],
+      "meaning": "오래감 · 한결같음",
+      "link": null
+    },
+    {
+      "id": "33",
+      "name": "천산돈",
+      "image": null,
+      "keywords": [
+        "후퇴",
+        "거리 두기",
+        "은둔",
+        "때 기다림",
+        "자기 보호"
+      ],
+      "meaning": "물러남",
+      "link": null
+    },
+    {
+      "id": "34",
+      "name": "뇌천대장",
+      "image": null,
+      "keywords": [
+        "힘",
+        "기세",
+        "자신감",
+        "과욕 주의",
+        "바름"
+      ],
+      "meaning": "크게 씩씩함",
+      "link": null
+    },
+    {
+      "id": "35",
+      "name": "화지진",
+      "image": null,
+      "keywords": [
+        "전진",
+        "승진",
+        "인정",
+        "아침 해",
+        "발전"
+      ],
+      "meaning": "나아감 · 승진",
+      "link": null
+    },
+    {
+      "id": "36",
+      "name": "지화명이",
+      "image": null,
+      "keywords": [
+        "어둠",
+        "숨김",
+        "인내",
+        "억울함",
+        "때를 기다림"
+      ],
+      "meaning": "밝음이 다침",
+      "link": null
+    },
+    {
+      "id": "37",
+      "name": "풍화가인",
+      "image": null,
+      "keywords": [
+        "가정",
+        "가족",
+        "역할",
+        "화목",
+        "안정"
+      ],
+      "meaning": "집안 · 가족",
+      "link": null
+    },
+    {
+      "id": "38",
+      "name": "화택규",
+      "image": null,
+      "keywords": [
+        "오해",
+        "대립",
+        "다름",
+        "작은 일은 가능",
+        "엇갈림"
+      ],
+      "meaning": "어긋남",
+      "link": null
+    },
+    {
+      "id": "39",
+      "name": "수산건",
+      "image": null,
+      "keywords": [
+        "장애",
+        "막힘",
+        "돌아감",
+        "도움 구하기",
+        "4대 난괘"
+      ],
+      "meaning": "절룩거림 · 험난",
+      "link": null
+    },
+    {
+      "id": "40",
+      "name": "뇌수해",
+      "image": null,
+      "keywords": [
+        "해결",
+        "해방",
+        "용서",
+        "봄비",
+        "빠른 행동"
+      ],
+      "meaning": "풀림",
+      "link": null
+    },
+    {
+      "id": "41",
+      "name": "산택손",
+      "image": null,
+      "keywords": [
+        "손해",
+        "희생",
+        "절제",
+        "투자",
+        "나중의 이익"
+      ],
+      "meaning": "덜어냄",
+      "link": null
+    },
+    {
+      "id": "42",
+      "name": "풍뢰익",
+      "image": null,
+      "keywords": [
+        "이익",
+        "성장",
+        "도움",
+        "확장",
+        "나눔"
+      ],
+      "meaning": "더함 · 이익",
+      "link": null
+    },
+    {
+      "id": "43",
+      "name": "택천쾌",
+      "image": null,
+      "keywords": [
+        "결단",
+        "청산",
+        "공표",
+        "단호함",
+        "성급함 주의"
+      ],
+      "meaning": "결단 · 끊음",
+      "link": null
+    },
+    {
+      "id": "44",
+      "name": "천풍구",
+      "image": null,
+      "keywords": [
+        "우연",
+        "만남",
+        "유혹",
+        "작은 시작",
+        "경계"
+      ],
+      "meaning": "뜻밖의 만남",
+      "link": null
+    },
+    {
+      "id": "45",
+      "name": "택지취",
+      "image": null,
+      "keywords": [
+        "모임",
+        "번성",
+        "인맥",
+        "행사",
+        "준비"
+      ],
+      "meaning": "모임",
+      "link": null
+    },
+    {
+      "id": "46",
+      "name": "지풍승",
+      "image": null,
+      "keywords": [
+        "상승",
+        "성장",
+        "승진",
+        "꾸준한 노력",
+        "나무"
+      ],
+      "meaning": "오름 · 성장",
+      "link": null
+    },
+    {
+      "id": "47",
+      "name": "택수곤",
+      "image": null,
+      "keywords": [
+        "곤란",
+        "궁핍",
+        "말이 안 통함",
+        "인내",
+        "4대 난괘"
+      ],
+      "meaning": "곤궁",
+      "link": null
+    },
+    {
+      "id": "48",
+      "name": "수풍정",
+      "image": null,
+      "keywords": [
+        "근원",
+        "변하지 않는 가치",
+        "나눔",
+        "정비",
+        "실력"
+      ],
+      "meaning": "우물",
+      "link": null
+    },
+    {
+      "id": "49",
+      "name": "택화혁",
+      "image": null,
+      "keywords": [
+        "변혁",
+        "개혁",
+        "변화",
+        "타이밍",
+        "새 출발"
+      ],
+      "meaning": "바꿈 · 혁신",
+      "link": null
+    },
+    {
+      "id": "50",
+      "name": "화풍정",
+      "image": null,
+      "keywords": [
+        "안정",
+        "새로움",
+        "협력",
+        "성공",
+        "세 발 솥"
+      ],
+      "meaning": "솥 · 새 질서",
+      "link": null
+    },
+    {
+      "id": "51",
+      "name": "중뢰진",
+      "image": null,
+      "keywords": [
+        "충격",
+        "놀람",
+        "깨어남",
+        "움직임",
+        "소동"
+      ],
+      "meaning": "우레 · 놀람",
+      "link": null
+    },
+    {
+      "id": "52",
+      "name": "중산간",
+      "image": null,
+      "keywords": [
+        "멈춤",
+        "고요",
+        "명상",
+        "정지",
+        "분수"
+      ],
+      "meaning": "그침 · 멈춤",
+      "link": null
+    },
+    {
+      "id": "53",
+      "name": "풍산점",
+      "image": null,
+      "keywords": [
+        "순서",
+        "점진",
+        "결혼",
+        "절차",
+        "성장"
+      ],
+      "meaning": "차츰 나아감",
+      "link": null
+    },
+    {
+      "id": "54",
+      "name": "뇌택귀매",
+      "image": null,
+      "keywords": [
+        "감정 앞섬",
+        "순서 어긋남",
+        "불안정",
+        "조건 차이",
+        "신중함"
+      ],
+      "meaning": "시집가는 누이",
+      "link": null
+    },
+    {
+      "id": "55",
+      "name": "뇌화풍",
+      "image": null,
+      "keywords": [
+        "풍요",
+        "절정",
+        "성대함",
+        "한낮",
+        "기울기 전"
+      ],
+      "meaning": "풍성함 · 절정",
+      "link": null
+    },
+    {
+      "id": "56",
+      "name": "화산려",
+      "image": null,
+      "keywords": [
+        "여행",
+        "이동",
+        "외로움",
+        "임시",
+        "낯선 곳"
+      ],
+      "meaning": "나그네",
+      "link": null
+    },
+    {
+      "id": "57",
+      "name": "중풍손",
+      "image": null,
+      "keywords": [
+        "유연함",
+        "스며듦",
+        "따름",
+        "망설임",
+        "반복되는 만남과 헤어짐"
+      ],
+      "meaning": "바람 · 스며듦",
+      "link": null
+    },
+    {
+      "id": "58",
+      "name": "중택태",
+      "image": null,
+      "keywords": [
+        "기쁨",
+        "대화",
+        "즐거움",
+        "사교",
+        "말조심"
+      ],
+      "meaning": "기쁨",
+      "link": null
+    },
+    {
+      "id": "59",
+      "name": "풍수환",
+      "image": null,
+      "keywords": [
+        "흩어짐",
+        "해소",
+        "이동",
+        "분산",
+        "다시 모으기"
+      ],
+      "meaning": "흩어짐 · 풀어짐",
+      "link": null
+    },
+    {
+      "id": "60",
+      "name": "수택절",
+      "image": null,
+      "keywords": [
+        "절제",
+        "규칙",
+        "한계",
+        "균형",
+        "아낌"
+      ],
+      "meaning": "마디 · 절제",
+      "link": null
+    },
+    {
+      "id": "61",
+      "name": "풍택중부",
+      "image": null,
+      "keywords": [
+        "진심",
+        "신뢰",
+        "성실",
+        "교감",
+        "약속"
+      ],
+      "meaning": "속마음의 믿음",
+      "link": null
+    },
+    {
+      "id": "62",
+      "name": "뇌산소과",
+      "image": null,
+      "keywords": [
+        "작은 일",
+        "겸손",
+        "지나침 주의",
+        "낮은 자세",
+        "세심함"
+      ],
+      "meaning": "조금 지나침",
+      "link": null
+    },
+    {
+      "id": "63",
+      "name": "수화기제",
+      "image": null,
+      "keywords": [
+        "완성",
+        "성취",
+        "균형",
+        "마무리",
+        "방심 주의"
+      ],
+      "meaning": "이미 이룸 · 완성",
+      "link": null
+    },
+    {
+      "id": "64",
+      "name": "화수미제",
+      "image": null,
+      "keywords": [
+        "미완성",
+        "다음 기회",
+        "재도전",
+        "희망",
+        "대기만성"
+      ],
+      "meaning": "아직 못 이룸",
+      "link": null
+    }
+  ]
+}
